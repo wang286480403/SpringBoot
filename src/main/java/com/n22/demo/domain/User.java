@@ -1,4 +1,4 @@
-package com.n22.demo.model;
+package com.n22.demo.domain;
 
 import javax.persistence.Column;
 import javax.persistence.Entity;

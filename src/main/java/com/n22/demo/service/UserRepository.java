@@ -1,6 +1,6 @@
 package com.n22.demo.service;
 
-import com.n22.demo.model.User;
+import com.n22.demo.domain.User;
 import org.springframework.data.jpa.repository.JpaRepository;
 
 /**

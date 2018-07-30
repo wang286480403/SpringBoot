@@ -1,6 +1,6 @@
 package com.n22.demo;
 
-import com.n22.demo.model.User;
+import com.n22.demo.domain.User;
 import com.n22.demo.service.UserRepository;
 import org.junit.Assert;
 import org.junit.Test;
