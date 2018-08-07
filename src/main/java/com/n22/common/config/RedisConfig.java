@@ -20,11 +20,16 @@ import java.lang.reflect.Method;
 /**
  * @author wangsiyong
  * @Description: Redis缓存配置
- * @date 2018/7/3015:23
+ * @date 2018/7/30 15:23
  */
 @Configuration
 @EnableCaching
 public class RedisConfig extends CachingConfigurerSupport {
+
+	/**
+	 * 自定义key的生成策略
+	 * @return
+	 */
 	@Bean
 	public KeyGenerator keyGenerator() {
 		return new KeyGenerator() {
@@ -50,6 +55,12 @@ public class RedisConfig extends CachingConfigurerSupport {
 		return rcm;
 	}
 
+	/**
+	 * 设置缓存对象的序列化方式,不设置会报错
+	 * 另外对于json序列化,对象要提供默认空构造器
+	 * @param factory
+	 * @return
+	 */
 	@Bean
 	public RedisTemplate<String, String> redisTemplate(RedisConnectionFactory factory) {
 		StringRedisTemplate template = new StringRedisTemplate(factory);

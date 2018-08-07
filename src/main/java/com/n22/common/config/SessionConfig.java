@@ -5,7 +5,7 @@ import org.springframework.session.data.redis.config.annotation.web.http.EnableR
 
 /**
  * @author wangsiyong
- * @Description: Session失效时间配置
+ * @Description: 共享Session失效时间配置
  * @date 2018/7/3016:15
  */
 @Configuration

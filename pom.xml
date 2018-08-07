@@ -6,7 +6,7 @@
 	<groupId>com.n22</groupId>
 	<artifactId>SpringBoot</artifactId>
 	<version>1.0.0</version>
-	<packaging>jar</packaging>
+	<packaging>war</packaging>
 	<name>SpringBoot</name>
 	<description>Demo project for Spring Boot</description>
 
@@ -42,6 +42,12 @@
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-web</artifactId>
 		</dependency>
+		<!-- 打包时排除tomcat -->
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter-tomcat</artifactId>
+			<scope>provided</scope>
+		</dependency>
 		<!-- Spring JPA -->
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
@@ -68,6 +74,16 @@
 		<dependency>
 			<groupId>org.springframework.session</groupId>
 			<artifactId>spring-session-data-redis</artifactId>
+		</dependency>
+		<!-- Email -->
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter-mail</artifactId>
+		</dependency>
+		<!-- Email模板引擎 -->
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter-thymeleaf</artifactId>
 		</dependency>
 		<!-- 开发调试 -->
 		<dependency>
