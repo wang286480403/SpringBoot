@@ -19,7 +19,7 @@ import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.
 
 /**
  * @author wangsiyong
- * @Description: Controller层单元测试
+ * @Description: HelloWorldController测试
  * @date 2018/8/117:44
  */
 @RunWith(SpringRunner.class)

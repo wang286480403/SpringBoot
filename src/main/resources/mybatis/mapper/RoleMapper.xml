@@ -4,17 +4,17 @@
 <mapper namespace="com.n22.system.dao.RoleDao">
 	<!-- 查询所有role -->
 	<select id="getAllRole" resultType="java.util.Map">
-		select * from sys_role
+		select * from role
 	</select>
 
 	<!-- 添加数据并返回主键ID,接收主键,必须以实体类接收 -->
 	<!-- keyColumn="id"对应数据库字段,keyProperty="id"对应实体类属性  -->
 	<insert id="addRoleGetID" parameterType="com.n22.system.model.Role" useGeneratedKeys="true" keyColumn="id"
 			keyProperty="id">
-		insert into sys_role(id,name,create_time,update_time) values(#{id},#{name},#{createTime},#{updateTime})
+		insert into role(id,name,create_time,update_time) values(#{id},#{name},#{createTime},#{updateTime})
 	</insert>
 
 	<insert id="addRoler">
-		insert into sys_role(id,name,create_time,update_time) values(#{id},#{name},sysdate(),sysdate())
+		insert into role(id,name,create_time,update_time) values(#{id},#{name},sysdate(),sysdate())
     </insert>
 </mapper>

@@ -14,7 +14,7 @@ import org.springframework.test.context.junit4.SpringJUnit4ClassRunner;
 import java.util.concurrent.TimeUnit;
 
 /**
- * @author wangsiyong
+ * @author wangsiyongassertEquals
  * @Description: TODO
  * @date 2018/7/3015:55
  */
